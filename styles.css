@@ -1,0 +1,134 @@
+@media screen and (max-width: 768px) {
+    .navbar-logo {
+        height: 50px;
+    }
+    .slick-slider .slick-dots {
+        bottom: 0;
+        right: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .people {
+        justify-content: space-around !important;
+        padding: 0 16px;
+    }
+    .people .people_box {
+        margin: 0 0 1rem;
+    }
+}
+body {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+.container-fluid {
+    padding: 0px;
+}
+/*section 1*/
+li.nav-item:last-child {
+    margin: 5px;
+}
+
+/*section 2*/
+.carousel {
+    width: 100%;
+    margin: 0px auto;
+}
+.slick-slide {
+    margin: 0px;
+}
+.slick-slide img {
+    width: 100%;
+    max-height: 500px;
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button {
+    background-color: #f6f6f6;
+    width: 12px;
+    height: 12px;
+    border-radius: 25px;
+    font-size: 0;
+    border: 0px;
+}
+.slick-dots li.slick-active button {
+    background-color: #ff6e00;
+    border: 4px solid white;
+    width: 12px;
+    height: 20px;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 35px;
+    right: 100px;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    padding: 0;
+    cursor: pointer;
+    background-color: #818181;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+}
+button.slick-prev {
+    left: 0px;
+}
+.slick-prev:before {
+    content: "<";
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+button.slick-next {
+    right: 0px;
+}
+.slick-next:before {
+    content: ">";
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+/*section 3*/
+.people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+.people_box {
+    margin: 0 1rem 3rem;
+}
+.people_img {
+    border-radius: 50%;
+}
+.people_text {
+    margin: 1rem 0;
+    font-weight: 500;
+}
+.people_box:hover > p.people_text {
+    text-decoration: underline;
+}
